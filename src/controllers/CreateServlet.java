@@ -52,7 +52,7 @@ public class CreateServlet extends HttpServlet {
             //現在時刻と更新日時を格納
             Timestamp currentTime = new Timestamp(System.currentTimeMillis());
             t.setCreated_at(currentTime);
-            t.setUpdate_at(currentTime);
+            t.setUpdated_at(currentTime);
 
             //DBにセーブ
             em.persist(t);
